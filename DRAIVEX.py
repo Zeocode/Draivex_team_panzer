@@ -1,5 +1,5 @@
 import xlrd
-loc = "E:/Important/Project/Draivex/test data/dataset.xlsx"
+loc = "E:/Important/Project/Draivex/test data/Book1.xlsx"
 wb = xlrd.open_workbook(loc)
 sheet = wb.sheet_by_index(0)
 i=0
@@ -31,10 +31,12 @@ while(row<sheet.nrows):
         else:
             j+=1
     row+=1
+print("CE and ME students combined = ",i)
+print("other students = ",j)
 if((i/(i+j))*100>=10 and i+j>=30):
     print("DrAiveX can EXIST in NSEC!!!")
 else:
     print("DrAiveX CAN'T EXIST in NSEC!!!")
 if((i/(i+1)*100)<10):
-    print("Due to deficit of CE and ME guys",i,j)
+    print("Due to deficit of CE and ME students")
         
