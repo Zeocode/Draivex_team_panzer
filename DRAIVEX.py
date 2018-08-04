@@ -1,5 +1,5 @@
 import xlrd
-loc = "E:/Important/Project/Draivex/test data/Book1.xlsx"
+loc = "E:/Important/Project/Draivex/test data/dataset.xlsx"
 wb = xlrd.open_workbook(loc)
 sheet = wb.sheet_by_index(0)
 i=0
